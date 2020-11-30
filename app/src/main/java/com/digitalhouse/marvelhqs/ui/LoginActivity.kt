@@ -17,11 +17,11 @@ class LoginActivity : AppCompatActivity() {
         val view = binding.root
         setContentView(view)
 
-        binding.cvWelcome.cvDadosLogin.btnLogin.setOnClickListener {
+        binding.cvWelcome.cvLoginDados.btnLogin.setOnClickListener {
             callHome()
         }
 
-        binding.cvWelcome.cvDadosLogin.tvCreateAccout.setOnClickListener {
+        binding.cvWelcome.cvLoginDados.tvCreateAccout.setOnClickListener {
             callRegister()
         }
 

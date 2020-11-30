@@ -10,22 +10,12 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="vertical">
-
-        <TextView
-            android:id="@+id/tvLoginTitulo"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:gravity="center"
-            android:text="Welcome to The Marvel HQ's"
-            android:textColor="@color/white"
-            android:textSize="24sp"
-            android:layout_marginBottom="10dp"
-            android:layout_marginTop="10dp"/>
+        android:orientation="vertical"
+        android:layout_marginTop="60dp">
 
         <include
-            android:id="@+id/cvLoginDados"
-            layout="@layout/item_welcome_dados_login"/>
+            android:id="@+id/cvRegisterDadosUsuario"
+            layout="@layout/item_register_dados_usuario"/>
 
 
     </LinearLayout>
