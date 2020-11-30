@@ -6,5 +6,7 @@
     <string name="login">LOG IN</string>
     <string name="creat_accout">Create account</string>
     <string name="user_name">Name</string>
+    <string name="save">SAVE</string>
+    <string name="register">Register</string>
 
 </resources>

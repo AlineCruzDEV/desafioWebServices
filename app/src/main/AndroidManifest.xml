@@ -10,7 +10,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.MarvelHQs">
         <activity android:name=".ui.HomeActivity"></activity>
-        <activity android:name=".ui.RegisterActivity" />
+        <activity
+            android:name=".ui.RegisterActivity"
+            android:parentActivityName=".ui.LoginActivity"/>
         <activity android:name=".ui.SplashScreen">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
