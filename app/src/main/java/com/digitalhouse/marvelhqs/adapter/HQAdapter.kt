@@ -1,37 +1,44 @@
 package com.digitalhouse.marvelhqs.adapter
 
-//class HQAdapter(val listaRestaurantes: List<Restaurante>, val context: Context) :
-//        RecyclerView.Adapter<RestauranteAdapter.RestauranteViewHolder>() {
-//
-//
-//    override fun onCreateViewHolder(
-//            parent: ViewGroup,
-//            viewType: Int
-//    ): RestauranteAdapter.RestauranteViewHolder {
-//        val itemView =
-//                LayoutInflater.from(parent.context).inflate(R.layout.restaurante_item, parent, false)
-//        return RestauranteViewHolder(itemView)
-//    }
-//
-//    override fun onBindViewHolder(holder: RestauranteAdapter.RestauranteViewHolder, position: Int) {
-//        val currentItem = listaRestaurantes[position]
-//        holder.tvNomeRestaurante.setText(currentItem.nome)
-//        holder.tvEnderecoRestaurante.setText(currentItem.endereco)
-//        holder.ivRestaurante.setImageResource(currentItem.imgRestaurante)
-//
-//        holder.itemView.setOnClickListener {
-//            Toast.makeText(context, "agora passar o Cardápio", Toast.LENGTH_SHORT).show()
-//        }
-//    }
-//
-//    override fun getItemCount(): Int {
-//        return listaRestaurantes.size
-//    }
-//
-//
-//    class RestauranteViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
-//        val tvNomeRestaurante: TextView = itemView.findViewById(R.id.tvNomeRestaurante)
-//        val tvEnderecoRestaurante: TextView = itemView.findViewById(R.id.tvEnderecoRestaurante)
-//        val ivRestaurante: ImageView = itemView.findViewById(R.id.ivRestaurante)
-//
-//    }
+import android.content.Context
+import android.view.LayoutInflater
+import android.view.View
+import android.view.ViewGroup
+import android.widget.TextView
+import android.widget.Toast
+import androidx.recyclerview.widget.RecyclerView
+import com.digitalhouse.marvelhqs.R
+import com.digitalhouse.marvelhqs.entities.HQ
+
+class HQAdapter(val listaHQs: List<HQ>, val context: Context) :
+        RecyclerView.Adapter<HQAdapter.HQViewHolder>() {
+
+
+    override fun onCreateViewHolder(
+            parent: ViewGroup,
+            viewType: Int
+    ): HQAdapter.HQViewHolder {
+        val itemView =
+                LayoutInflater.from(parent.context).inflate(R.layout.item_home_quadrinho, parent, false)
+        return HQViewHolder(itemView)
+    }
+
+    override fun onBindViewHolder(holder: HQAdapter.HQViewHolder, position: Int) {
+        val currentItem = listaHQs[position]
+        holder.tvNumHQ.text = currentItem.nome
+
+        holder.itemView.setOnClickListener {
+            Toast.makeText(context, "agora passar os detalhes do quadrinho", Toast.LENGTH_SHORT).show()
+        }
+    }
+
+    override fun getItemCount(): Int {
+        return listaHQs.size
+    }
+
+
+    class HQViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
+        val tvNumHQ: TextView = itemView.findViewById(R.id.tvItemHomeQuadrinho)
+    }
+
+}

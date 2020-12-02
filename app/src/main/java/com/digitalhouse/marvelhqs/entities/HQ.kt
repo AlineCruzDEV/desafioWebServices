@@ -1,4 +1,4 @@
 package com.digitalhouse.marvelhqs.entities
 
-class HQ {
+data class HQ (val nome: String){
 }
