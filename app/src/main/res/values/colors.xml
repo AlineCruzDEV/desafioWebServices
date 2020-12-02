@@ -8,5 +8,7 @@
     <color name="fundo">#00162C</color>
     <color name="cinza_claro">#47525E</color>
     <color name="cinza_escuro">#1F2D3D</color>
+    <color name="cinza_nova_conta">#EFF2F5</color>
+
 
 </resources>

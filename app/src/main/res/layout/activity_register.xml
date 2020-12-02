@@ -4,8 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ui.RegisterActivity"
-    android:background="@color/fundo">
+    android:background="@color/fundo"
+    tools:context=".ui.RegisterActivity">
 
     <androidx.appcompat.widget.Toolbar
         android:id="@+id/toolbarRegister"
@@ -14,10 +14,10 @@
         android:background="@color/vermelho"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
         app:navigationIcon="@drawable/ic_baseline_arrow_back_24"
         app:title="@string/register"
-        app:titleTextColor="@color/white" />
+        app:titleTextColor="@color/white"
+        tools:ignore="MissingConstraints" />
 
 
     <LinearLayout
@@ -29,7 +29,7 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
+        app:layout_constraintTop_toBottomOf="@+id/toolbarRegister">
 
         <include
             android:id="@+id/cvRegister"
@@ -40,6 +40,27 @@
             app:layout_constraintTop_toTopOf="parent" />
 
     </LinearLayout>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="95dp"
+        android:layout_height="95dp"
+        android:layout_marginTop="80dp"
+        android:background="@color/cinza_nova_conta"
+        app:cardCornerRadius="70dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/toolbarRegister"
+        app:layout_constraintTop_toBottomOf="@+id/toolbarRegister">
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="80dp"
+            android:layout_height="70dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="5dp"
+            android:paddingTop="10dp"
+            app:srcCompat="@drawable/img_nova_conta" />
+
+    </androidx.cardview.widget.CardView>
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
