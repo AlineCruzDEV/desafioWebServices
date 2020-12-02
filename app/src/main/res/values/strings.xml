@@ -8,5 +8,8 @@
     <string name="user_name">Name</string>
     <string name="save">SAVE</string>
     <string name="register">Register</string>
+    <string name="published">Published</string>
+    <string name="price">Price</string>
+    <string name="pages">Pages</string>
 
 </resources>
