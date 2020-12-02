@@ -25,8 +25,6 @@ class RegisterActivity : AppCompatActivity() {
         binding.cvRegister.cvRegisterDadosUsuario.btnRegisterSave.setOnClickListener{
             callHome()
         }
-
-
     }
 
     private fun callHome() {

@@ -24,7 +24,6 @@ class LoginActivity : AppCompatActivity() {
         binding.cvWelcome.cvLoginConta.tvCreateAccout.setOnClickListener {
             callRegister()
         }
-
     }
 
     private fun callRegister() {

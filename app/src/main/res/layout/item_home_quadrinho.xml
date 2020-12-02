@@ -3,24 +3,26 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:orientation="vertical"
     android:layout_width="110dp"
-    android:layout_height="180dp"
+    android:layout_height="175dp"
     android:layout_marginTop="10dp"
-    android:layout_marginLeft="5dp"
-    android:background="@color/fundo">
+    android:layout_marginLeft="4dp"
+    android:layout_margin="4dp"
+    android:background="@color/white">
 
     <ImageView
         android:id="@+id/ivItemHomeQuadrinho"
-        android:layout_width="110dp"
+        android:layout_width="100dp"
         android:layout_height="150dp"
         android:adjustViewBounds="true"
         android:scaleType="centerCrop"
-
         app:srcCompat="@drawable/spider_man"
-        android:paddingBottom="5dp"
-        android:paddingTop="5dp"
-        android:paddingLeft="5dp"
-        android:paddingRight="5dp"
-        android:background="@color/white"/>
+        android:background="@color/white"
+        android:layout_marginBottom="5dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"/>
+
+
 
     <TextView
         android:id="@+id/tvItemHomeQuadrinho"
@@ -28,5 +30,6 @@
         android:layout_height="wrap_content"
         android:text="#No."
         android:textColor="@color/white"
-        android:layout_marginLeft="10dp"/>
+        android:background="@color/fundo"
+        android:paddingLeft="10dp"/>
 </LinearLayout>
