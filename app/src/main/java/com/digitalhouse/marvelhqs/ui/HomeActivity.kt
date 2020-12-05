@@ -15,8 +15,6 @@ import com.digitalhouse.marvelhqs.adapter.HQAdapter as HQAdapter
 
 class HomeActivity : AppCompatActivity() {
 
-    var hqs = ArrayList<HQ>()
-
     private lateinit var binding: ActivityHomeBinding
 
     val viewModel by viewModels<MainViewModel> {

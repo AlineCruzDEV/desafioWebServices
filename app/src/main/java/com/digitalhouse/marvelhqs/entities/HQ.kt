@@ -20,14 +20,26 @@ data class Thumbnail(val path: String, val extension: String) : Serializable {
     }
 }
 
-data class Image(val extension: String, val path: String) : Serializable
+data class Image(val extension: String, val path: String) : Serializable{
+    override fun toString(): String {
+        return "$path.$extension".replace("http", "https")
+    }
+}
 
 data class Date(
     val date: String,
     val type: String
-) : Serializable
+) : Serializable {
+    override fun toString(): String {
+        return date
+    }
+}
 
 data class Price(
     val price: Double,
     val type: String
-) : Serializable
+) : Serializable {
+    override fun toString(): String {
+        return "$ $price"
+    }
+}

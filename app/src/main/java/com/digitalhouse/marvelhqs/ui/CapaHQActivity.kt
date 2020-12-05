@@ -4,6 +4,8 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import com.digitalhouse.marvelhqs.databinding.ActivityCapaHqBinding
 import com.digitalhouse.marvelhqs.databinding.ActivityDetalheHqBinding
+import com.digitalhouse.marvelhqs.entities.HQ
+import com.squareup.picasso.Picasso
 
 class CapaHQActivity : AppCompatActivity() {
 
@@ -18,6 +20,13 @@ class CapaHQActivity : AppCompatActivity() {
         setSupportActionBar(binding.toolbarCapaHQ)
 
         supportActionBar?.setDisplayHomeAsUpEnabled(true)
+
+        val hq = intent.getSerializableExtra("hq") as HQ
+
+        Picasso.get().load(hq.thumbnail.toString())
+            .into(binding.ivCapaHQ)
+
+
 
     }
 }
