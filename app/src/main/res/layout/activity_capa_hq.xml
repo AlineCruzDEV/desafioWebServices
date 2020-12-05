@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.CapaHQActivity"
+    android:orientation="vertical">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbarCapaHQ"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:navigationIcon="@drawable/ic_baseline_close_24"
+        android:background="@color/fundo"
+        app:title=" " />
+
+    <ImageView
+        android:id="@+id/ivCapaHQ"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:adjustViewBounds="true"
+        android:scaleType="fitCenter"
+        android:background="@color/fundo"
+        android:src="@drawable/spider_man" />
+
+</LinearLayout>
